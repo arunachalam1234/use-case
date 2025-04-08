@@ -1,0 +1,23 @@
+<div class="table-container">
+    <div class="title">
+        <span>Investment Table</span>
+    </div>
+    <table class="investment-table">
+        <thead>
+            <th class="name header">Name</th>
+            <th class="price header">Price</th>
+            <th class="count header">Count</th>
+        </thead>
+        <tbody>
+            @for(item of investmentData; track item){
+                <tr>
+                    <td class="cell">{{item['name']}}</td>
+                    <td class="cell">{{item['price']}}</td>
+                    <td class="cell">{{item['count']}}</td>
+
+                </tr>
+            }
+        
+        </tbody>
+    </table>
+</div>

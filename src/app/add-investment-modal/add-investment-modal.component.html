@@ -1,0 +1,27 @@
+<div class="header-section">
+    <div class="title">
+        <span>Add Investment</span>
+    </div>
+    <div class="close">
+        <span>X</span>
+    </div>
+</div>
+<div class="investment-form" [formGroup]="investmentForm">
+    <div class="name input-item">
+        <label class="input-label">Investment name</label>
+        <input type="text" formControlName="name" placeholder="Enter investment name">
+    </div>
+    <div class="price input-item">
+        <label class="input-label">price</label>
+        <input type="number" formControlName="price" placeholder="Enter price">
+    </div>
+    <div class="count input-item">
+        <label class="input-label">No of items</label>
+        <input type="number" formControlName="count" placeholder="No of items">
+    </div>
+</div>
+<div class="submit-btn">
+    <button class="add-btn" (click)="addInvestment()">
+        Add Investment
+    </button>
+</div>
